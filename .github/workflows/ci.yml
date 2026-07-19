@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Type check
+        run: npm run type-check
+        
+      - name: Biome CI (lint, format, organize imports)
+        run: npm run check:ci
+        
+      - name: Build application
+        run: npm run build
+        
+      - name: Test environment variables
+        env:
+          NEXT_PUBLIC_RESCOUT_AGENT_ID: ${{ secrets.NEXT_PUBLIC_RESCOUT_AGENT_ID }}
+        run: |
+          if [ -z "$NEXT_PUBLIC_RESCOUT_AGENT_ID" ]; then
+            echo "Warning: NEXT_PUBLIC_RESCOUT_AGENT_ID not set"
+          fi

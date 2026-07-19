@@ -1,0 +1,15 @@
+# Featured Properties Images Directory
+# This directory contains high-quality images of featured property listings
+#
+# Naming Convention: property-neighborhood-type-size.webp
+# Examples:
+# - property-green-valley-luxury-1200x800.webp
+# - property-anthem-hillside-1200x800.webp
+# - property-stephanie-ranch-family-1200x800.webp
+#
+# Optimization Guidelines:
+# - Use 3:2 aspect ratio (1200x800px recommended)
+# - WebP format with JPG fallback
+# - Compress to 75% quality
+# - Include property details in filename
+# - Optimize for MLS and marketing use

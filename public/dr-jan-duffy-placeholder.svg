@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="98" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2"/>
+  
+  <!-- Professional headshot placeholder -->
+  <circle cx="100" cy="70" r="30" fill="#3b82f6"/>
+  <rect x="70" y="100" width="60" height="40" rx="20" fill="#3b82f6"/>
+  
+  <!-- Camera icon -->
+  <circle cx="100" cy="60" r="8" fill="#ffffff"/>
+  <rect x="95" y="55" width="10" height="10" rx="2" fill="#3b82f6"/>
+  
+  <!-- Text -->
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="11" fill="#374151" text-anchor="middle" font-weight="bold">Dr. Jan Duffy</text>
+  <text x="100" y="145" font-family="Arial, sans-serif" font-size="9" fill="#6b7280" text-anchor="middle">Henderson REALTOR</text>
+  
+  <!-- Photo frame indicator -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="8" fill="#9ca3af" text-anchor="middle">Add Photo Here</text>
+</svg>

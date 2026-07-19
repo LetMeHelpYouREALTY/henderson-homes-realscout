@@ -1,0 +1,14 @@
+# Agents Photos Directory
+# This directory contains professional photos of real estate agents
+# 
+# Naming Convention: agent-name-role-size.webp
+# Examples:
+# - jan-duffy-profile-400x400.webp
+# - jan-duffy-headshot-800x800.webp
+# - jan-duffy-business-1200x800.webp
+#
+# Optimization Guidelines:
+# - Use WebP format for best compression
+# - Maintain 1:1 aspect ratio for profile photos
+# - Compress to 70-80% quality
+# - Include alt text descriptions

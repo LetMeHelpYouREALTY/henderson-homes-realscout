@@ -1,0 +1,11 @@
+#!/bin/sh
+# Pre-commit hook for Biome
+
+set -e
+
+echo "Running Biome checks..."
+
+# Check formatting, linting, and import organization
+npm run check:ci
+
+echo "✅ Biome checks passed!"

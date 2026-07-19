@@ -1,0 +1,147 @@
+# Cloudflare Configuration for SEO and Performance Optimization
+name = "searchforhomesinhenderson.com"
+compatibility_date = "2024-01-01"
+
+# DNS and SSL Configuration
+[ssl]
+mode = "full"
+min_tls_version = "1.2"
+
+# Page Rules for SEO and Performance
+[[rules]]
+name = "SEO and Performance Rules"
+expression = "true"
+action = "set_config"
+[rules.action_parameters]
+  cache_level = "aggressive"
+  edge_cache_ttl = 86400
+  browser_cache_ttl = 31536000
+  minify = {html = true, css = true, js = true}
+  rocket_loader = "on"
+  security_level = "medium"
+  ssl = "full"
+  always_use_https = true
+  automatic_https_rewrites = true
+  email_obfuscation = "on"
+  server_side_exclude = "on"
+  hotlink_protection = "on"
+  browser_check = "on"
+  development_mode = "off"
+  ip_geolocation = "on"
+  websockets = "on"
+  opportunistic_encryption = "on"
+  tls_1_3 = "on"
+  pseudo_ipv4 = "off"
+  ipv6 = "on"
+  minify = {html = true, css = true, js = true}
+  rocket_loader = "on"
+  security_level = "medium"
+  ssl = "full"
+  always_use_https = true
+  automatic_https_rewrites = "on"
+  email_obfuscation = "on"
+  server_side_exclude = "on"
+  hotlink_protection = "on"
+  browser_check = "on"
+  development_mode = "off"
+  ip_geolocation = "on"
+  websockets = "on"
+  opportunistic_encryption = "on"
+  tls_1_3 = "on"
+  pseudo_ipv4 = "off"
+  ipv6 = "on"
+
+# Page Rules for specific paths
+[[rules]]
+name = "Static Assets Cache"
+expression = "(http.request.uri.path matches \"^/_next/static/.*\" or http.request.uri.path matches \"^/images/.*\" or http.request.uri.path matches \"^/favicon.ico\")"
+action = "set_config"
+[rules.action_parameters]
+  cache_level = "cache_everything"
+  edge_cache_ttl = 31536000
+  browser_cache_ttl = 31536000
+  minify = {css = true, js = true}
+
+[[rules]]
+name = "API Routes"
+expression = "http.request.uri.path matches \"^/api/.*\""
+action = "set_config"
+[rules.action_parameters]
+  cache_level = "bypass"
+  edge_cache_ttl = 0
+  browser_cache_ttl = 0
+
+[[rules]]
+name = "SEO Pages"
+expression = "(http.request.uri.path matches \"^/neighborhoods/.*\" or http.request.uri.path matches \"^/home-value\" or http.request.uri.path matches \"^/search\" or http.request.uri.path matches \"^/faq\")"
+action = "set_config"
+[rules.action_parameters]
+  cache_level = "standard"
+  edge_cache_ttl = 3600
+  browser_cache_ttl = 1800
+
+# Security Rules
+[[rules]]
+name = "Security Headers"
+expression = "true"
+action = "set_config"
+[rules.action_parameters]
+  security_headers = {
+    "X-Frame-Options" = "DENY"
+    "X-Content-Type-Options" = "nosniff"
+    "X-XSS-Protection" = "1; mode=block"
+    "Referrer-Policy" = "strict-origin-when-cross-origin"
+    "Permissions-Policy" = "camera=(), microphone=(), geolocation=()"
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains; preload"
+  }
+
+# Rate Limiting
+[[rules]]
+name = "Rate Limiting"
+expression = "http.request.uri.path matches \"^/api/.*\""
+action = "block"
+[rules.action_parameters]
+  rate_limit = {
+    requests_per_period = 100
+    period = 60
+    action = "challenge"
+  }
+
+# Bot Management
+[[rules]]
+name = "Bot Management"
+expression = "cf.client.bot"
+action = "set_config"
+[rules.action_parameters]
+  bot_fight_mode = "on"
+  security_level = "high"
+
+# Mobile Optimization
+[[rules]]
+name = "Mobile Optimization"
+expression = "http.user_agent contains \"Mobile\""
+action = "set_config"
+[rules.action_parameters]
+  mobile_redirect = "on"
+  minify = {html = true, css = true, js = true}
+  rocket_loader = "on"
+
+# Geographic Optimization
+[[rules]]
+name = "US Optimization"
+expression = "ip.geoip.country eq \"US\""
+action = "set_config"
+[rules.action_parameters]
+  cache_level = "aggressive"
+  edge_cache_ttl = 86400
+  browser_cache_ttl = 31536000
+
+# RealScout Widget Optimization
+[[rules]]
+name = "RealScout Widgets"
+expression = "http.request.uri.path matches \"^/.*\" and http.user_agent contains \"bot\""
+action = "set_config"
+[rules.action_parameters]
+  cache_level = "standard"
+  edge_cache_ttl = 1800
+  browser_cache_ttl = 900

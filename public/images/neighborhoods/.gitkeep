@@ -1,0 +1,16 @@
+# Neighborhoods Images Directory
+# This directory contains photos of Henderson neighborhoods and communities
+#
+# Naming Convention: neighborhood-name-type-size.webp
+# Examples:
+# - neighborhood-green-valley-aerial-1920x1080.webp
+# - neighborhood-anthem-amenities-1200x800.webp
+# - neighborhood-stephanie-ranch-schools-1200x800.webp
+# - neighborhood-whitney-ranch-parks-1200x800.webp
+#
+# Optimization Guidelines:
+# - Hero images: 16:9 ratio (1920x1080px)
+# - Content images: 3:2 ratio (1200x800px)
+# - WebP format for best performance
+# - Compress to 80% quality
+# - Include neighborhood highlights and amenities

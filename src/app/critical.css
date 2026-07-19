@@ -1,0 +1,56 @@
+/* Critical CSS for above-the-fold content */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+  .md\:hidden {
+    display: none;
+  }
+}
+
+/* RealScout widget optimizations */
+realscout-office-listings {
+  --rs-listing-divider-color: rgb(101, 141, 172);
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 480px;
+  z-index: 1000;
+}
+
+realscout-office-listings .listing-card {
+  transition: transform 0.2s ease;
+}
+
+realscout-office-listings .listing-card:hover {
+  transform: translateY(-2px);
+}
+
+realscout-home-value {
+  --rs-hvw-background-color: #ffffff;
+  --rs-hvw-title-color: #000000;
+  --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.5);
+  --rs-hvw-primary-button-text-color: #ffffff;
+  --rs-hvw-primary-button-color: rgb(35, 93, 137);
+  --rs-hvw-secondary-button-text-color: rgb(35, 93, 137);
+  --rs-hvw-secondary-button-color: #ffffff;
+  --rs-hvw-widget-width: auto;
+  min-height: 480px;
+  z-index: 1000;
+}
