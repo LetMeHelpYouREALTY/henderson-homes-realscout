@@ -62,9 +62,7 @@ export async function runAdvisor(
   // 2. Retention guard: block Fable/Mythos advisors unless explicitly opted in.
   if (check.retentionRisk && !allowRetentionRisk) {
     throw new Error(
-      `Advisor "${check.advisor}" carries 30-day retention (no ZDR). ` +
-        `Refusing by default — never route client PII / flagged work here. ` +
-        `Pass allowRetentionRisk:true only for non-confidential work.`
+      `Advisor "${check.advisor}" carries 30-day retention (no ZDR). Refusing by default — never route client PII / flagged work here. Pass allowRetentionRisk:true only for non-confidential work.`
     )
   }
   if (!apiKey) {

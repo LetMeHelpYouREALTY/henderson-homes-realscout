@@ -47,6 +47,7 @@ export default function RealScoutListings({
           <div className="h-8 bg-gray-200 rounded w-1/3 mb-6" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[...Array(6)].map((_, i) => (
+              // biome-ignore lint/suspicious/noArrayIndexKey: fixed-count static skeleton placeholders, never reordered.
               <div key={i} className="space-y-3">
                 <div className="h-48 bg-gray-200 rounded" />
                 <div className="h-4 bg-gray-200 rounded w-3/4" />
@@ -196,9 +197,9 @@ function ListingCard({ listing }: { listing: RealScoutListing }) {
 
         {/* Features */}
         <div className="flex flex-wrap gap-1 mb-3">
-          {listing.features.slice(0, 3).map((feature, index) => (
+          {listing.features.slice(0, 3).map((feature) => (
             <span
-              key={index}
+              key={feature}
               className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs"
             >
               {feature}
@@ -213,7 +214,7 @@ function ListingCard({ listing }: { listing: RealScoutListing }) {
           onClick={() => {
             // Open RealScout listing in new tab
             window.open(
-              `https://em.realscout.com/widgets/realscout-web-components.umd.js`,
+              'https://em.realscout.com/widgets/realscout-web-components.umd.js',
               '_blank'
             )
           }}

@@ -144,13 +144,14 @@ async function processImageFile(inputPath, relativePath) {
 function getImageType(relativePath) {
   if (relativePath.includes('/agents/') || relativePath.includes('/team/')) {
     return 'profile'
-  } else if (relativePath.includes('/properties/')) {
-    return 'property'
-  } else if (relativePath.includes('/neighborhoods/')) {
-    return 'hero'
-  } else {
-    return 'thumbnail'
   }
+  if (relativePath.includes('/properties/')) {
+    return 'property'
+  }
+  if (relativePath.includes('/neighborhoods/')) {
+    return 'hero'
+  }
+  return 'thumbnail'
 }
 
 /**

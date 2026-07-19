@@ -13,7 +13,7 @@ export default function StructuredData({ type, data }: StructuredDataProps) {
   return (
     <script
       type="application/ld+json"
-      // eslint-disable-next-line react/no-danger
+      // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON.stringify of build-time schema.org data, not user input.
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(baseData),
       }}

@@ -63,17 +63,35 @@ export interface PredictiveInsights {
   marketOpportunities: string[]
 }
 
+// Same shape as ClientProfile['marketContext']; kept separate since callers
+// pass it independently of a stored profile.
+type MarketData = ClientProfile['marketContext']
+
+interface BehaviorPatterns {
+  keyFactors: string[]
+  engagementTrend: 'increasing' | 'decreasing'
+  readinessLevel: 'ready' | 'exploring'
+}
+
+interface PredictiveModelMeta {
+  version: string
+  trained: boolean
+}
+
 export class AIClientIntelligenceService {
   private clientProfiles: Map<string, ClientProfile> = new Map()
   private leadScores: Map<string, LeadScore> = new Map()
-  private predictiveModels: Map<string, any> = new Map()
+  private predictiveModels: Map<string, PredictiveModelMeta> = new Map()
 
   constructor() {
     this.initializePredictiveModels()
   }
 
   // Score a lead based on multiple AI factors
-  async scoreLead(clientId: string, marketData: any): Promise<LeadScore> {
+  async scoreLead(
+    clientId: string,
+    marketData: MarketData
+  ): Promise<LeadScore> {
     const profile = this.clientProfiles.get(clientId)
     if (!profile) {
       throw new Error(`Client profile not found: ${clientId}`)
@@ -272,7 +290,7 @@ export class AIClientIntelligenceService {
   // Private methods for AI calculations
   private calculateMarketTimingScore(
     profile: ClientProfile,
-    marketData: any
+    marketData: MarketData
   ): number {
     let score = 50 // Base score
 
@@ -340,7 +358,7 @@ export class AIClientIntelligenceService {
 
   private calculateLocalOpportunityScore(
     profile: ClientProfile,
-    marketData: any
+    marketData: MarketData
   ): number {
     let score = 50
 
@@ -364,7 +382,7 @@ export class AIClientIntelligenceService {
 
   private calculateCompetitionScore(
     profile: ClientProfile,
-    marketData: any
+    marketData: MarketData
   ): number {
     let score = 50
 
@@ -450,7 +468,7 @@ export class AIClientIntelligenceService {
     return 'low'
   }
 
-  private analyzeBehaviorPatterns(profile: ClientProfile): any {
+  private analyzeBehaviorPatterns(profile: ClientProfile): BehaviorPatterns {
     return {
       keyFactors: [
         `Search frequency: ${profile.behavior.searchFrequency} searches/week`,
@@ -507,7 +525,7 @@ export class AIClientIntelligenceService {
 
   private determineNextBestAction(
     profile: ClientProfile,
-    behaviorPatterns: any
+    behaviorPatterns: BehaviorPatterns
   ): string {
     if (profile.behavior.engagementScore < 30) return 'Schedule Consultation'
     if (profile.behavior.contactActions === 0) return 'Initial Contact'
@@ -518,7 +536,7 @@ export class AIClientIntelligenceService {
 
   private predictTimeline(
     profile: ClientProfile,
-    behaviorPatterns: any
+    behaviorPatterns: BehaviorPatterns
   ): PredictiveInsights['predictedTimeline'] {
     if (
       profile.behavior.engagementScore > 80 &&
@@ -537,7 +555,7 @@ export class AIClientIntelligenceService {
 
   private calculatePredictionConfidence(
     profile: ClientProfile,
-    behaviorPatterns: any
+    behaviorPatterns: BehaviorPatterns
   ): number {
     let confidence = 50
 

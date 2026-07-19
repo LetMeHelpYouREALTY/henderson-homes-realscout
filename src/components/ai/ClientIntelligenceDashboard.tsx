@@ -209,7 +209,7 @@ export default function ClientIntelligenceDashboard({
   if (loading) {
     return (
       <div className={`flex items-center justify-center p-8 ${className}`}>
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600" />
       </div>
     )
   }
@@ -230,15 +230,18 @@ export default function ClientIntelligenceDashboard({
       {/* Navigation Tabs */}
       <div className="border-b border-gray-200">
         <nav className="flex space-x-8 px-6">
-          {[
-            { id: 'overview', label: 'Overview', icon: '📊' },
-            { id: 'clients', label: 'Client Profiles', icon: '👥' },
-            { id: 'analytics', label: 'AI Analytics', icon: '🤖' },
-            { id: 'automation', label: 'Automation', icon: '⚡' },
-          ].map((tab) => (
+          {(
+            [
+              { id: 'overview', label: 'Overview', icon: '📊' },
+              { id: 'clients', label: 'Client Profiles', icon: '👥' },
+              { id: 'analytics', label: 'AI Analytics', icon: '🤖' },
+              { id: 'automation', label: 'Automation', icon: '⚡' },
+            ] as const
+          ).map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id as any)}
+              type="button"
+              onClick={() => setActiveTab(tab.id)}
               className={`py-4 px-1 border-b-2 font-medium text-sm ${
                 activeTab === tab.id
                   ? 'border-blue-500 text-blue-600'
@@ -339,10 +342,11 @@ export default function ClientIntelligenceDashboard({
                 <h3 className="text-lg font-semibold mb-4">Client Profiles</h3>
                 <div className="space-y-3 max-h-96 overflow-y-auto">
                   {clients.map((client) => (
-                    <div
+                    <button
                       key={client.id}
+                      type="button"
                       onClick={() => handleClientSelect(client)}
-                      className={`p-4 border rounded-lg cursor-pointer transition-colors ${
+                      className={`w-full text-left p-4 border rounded-lg cursor-pointer transition-colors ${
                         selectedClient?.id === client.id
                           ? 'border-blue-500 bg-blue-50'
                           : 'border-gray-200 hover:border-gray-300'
@@ -363,13 +367,13 @@ export default function ClientIntelligenceDashboard({
                         <div className="text-right">
                           <div
                             className={`inline-block w-3 h-3 rounded-full ${getUrgencyColor(client.followUpPriority)}`}
-                          ></div>
+                          />
                           <div className="text-sm text-gray-600 mt-1">
                             {client.followUpPriority}
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </button>
                   ))}
                 </div>
               </div>
@@ -467,7 +471,7 @@ export default function ClientIntelligenceDashboard({
                               <div
                                 className="bg-blue-600 h-2 rounded-full"
                                 style={{ width: `${score}%` }}
-                              ></div>
+                              />
                             </div>
                             <span className="text-sm font-medium w-8">
                               {score}
@@ -485,8 +489,8 @@ export default function ClientIntelligenceDashboard({
                     AI Insights
                   </h4>
                   <div className="space-y-2">
-                    {leadScore.insights.map((insight, index) => (
-                      <div key={index} className="flex items-start space-x-2">
+                    {leadScore.insights.map((insight) => (
+                      <div key={insight} className="flex items-start space-x-2">
                         <span className="text-blue-500 mt-1">💡</span>
                         <span className="text-sm text-gray-700">{insight}</span>
                       </div>
@@ -500,8 +504,8 @@ export default function ClientIntelligenceDashboard({
                     AI Recommendations
                   </h4>
                   <div className="space-y-2">
-                    {leadScore.recommendations.map((rec, index) => (
-                      <div key={index} className="flex items-start space-x-2">
+                    {leadScore.recommendations.map((rec) => (
+                      <div key={rec} className="flex items-start space-x-2">
                         <span className="text-green-500 mt-1">✅</span>
                         <span className="text-sm text-gray-700">{rec}</span>
                       </div>
@@ -552,8 +556,11 @@ export default function ClientIntelligenceDashboard({
                       Key Factors
                     </h4>
                     <div className="space-y-2">
-                      {predictions.keyFactors.map((factor, index) => (
-                        <div key={index} className="flex items-start space-x-2">
+                      {predictions.keyFactors.map((factor) => (
+                        <div
+                          key={factor}
+                          className="flex items-start space-x-2"
+                        >
                           <span className="text-blue-500 mt-1">🔍</span>
                           <span className="text-sm text-gray-700">
                             {factor}
@@ -568,19 +575,17 @@ export default function ClientIntelligenceDashboard({
                       Market Opportunities
                     </h4>
                     <div className="space-y-2">
-                      {predictions.marketOpportunities.map(
-                        (opportunity, index) => (
-                          <div
-                            key={index}
-                            className="flex items-start space-x-2"
-                          >
-                            <span className="text-green-500 mt-1">🎯</span>
-                            <span className="text-sm text-gray-700">
-                              {opportunity}
-                            </span>
-                          </div>
-                        )
-                      )}
+                      {predictions.marketOpportunities.map((opportunity) => (
+                        <div
+                          key={opportunity}
+                          className="flex items-start space-x-2"
+                        >
+                          <span className="text-green-500 mt-1">🎯</span>
+                          <span className="text-sm text-gray-700">
+                            {opportunity}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
