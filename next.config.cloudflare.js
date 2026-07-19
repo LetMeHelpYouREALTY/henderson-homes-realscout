@@ -17,12 +17,15 @@ const nextConfig = {
     },
   },
 
+  // Disable in-memory ISR caching; Cloudflare's edge cache handles this instead.
+  // (was experimental.isrMemoryCacheSize pre-14.1, now a top-level option)
+  cacheMaxMemorySize: 0,
+
   // Performance optimizations for Cloudflare
   experimental: {
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
     optimizeCss: true,
     // Cloudflare-specific optimizations
-    isrMemoryCacheSize: 0, // Use Cloudflare's edge cache instead
     workerThreads: false, // Cloudflare handles threading
     cpus: 1, // Single CPU for Cloudflare Workers
   },

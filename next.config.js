@@ -93,4 +93,9 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+// Next.js 16 removed the (never-official) `next build --config` flag, so the
+// Cloudflare build target is now selected via env var instead of a CLI flag.
+module.exports =
+  process.env.NEXT_BUILD_TARGET === 'cloudflare'
+    ? require('./next.config.cloudflare.js')
+    : nextConfig
