@@ -49,9 +49,8 @@ export default function WhitneyRanchPage() {
                 Whitney Ranch Henderson Homes for Sale
               </h1>
               <p className="text-xl mb-8">
-                Live MLS listings • Family-friendly community • Mature
-                landscaping • Parks and recreation • Whitney Elementary (8/10
-                rating)
+                Live MLS listings • Mature landscaping • Parks and recreation •
+                Whitney Elementary
               </p>
 
               <div className="grid md:grid-cols-4 gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg">
@@ -267,7 +266,7 @@ export default function WhitneyRanchPage() {
                       <p className="font-semibold">Whitney Elementary</p>
                       <p>Rating: 8/10 • Enrollment: 650</p>
                       <p className="text-xs text-gray-600">
-                        Good school with strong community support
+                        Strong community support
                       </p>
                     </div>
                     <div>
@@ -281,15 +280,15 @@ export default function WhitneyRanchPage() {
                       <p className="font-semibold">Bob Miller Middle School</p>
                       <p>Rating: 8/10 • Enrollment: 1,100</p>
                       <p className="text-xs text-gray-600">
-                        Excellent special education support
+                        Special education support available
                       </p>
                     </div>
                   </div>
                   <div className="mt-4 p-3 bg-blue-50 rounded">
                     <p className="text-xs text-blue-800">
-                      <strong>Pro tip:</strong> Whitney Elementary is a good
-                      school with available enrollment. Contact the school
-                      directly about enrollment if buying mid-school year.
+                      <strong>Pro tip:</strong> Whitney Elementary has available
+                      enrollment. Contact the school directly about enrollment
+                      if buying mid-school year.
                     </p>
                   </div>
                 </div>

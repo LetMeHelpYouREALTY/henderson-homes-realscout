@@ -111,11 +111,11 @@ export default function HomePage() {
             </div>
             <div className="text-center">
               <h3 className="text-2xl font-semibold mb-4 text-blue-600">
-                Top-Rated Schools
+                Clark County School District
               </h3>
               <p className="text-gray-600">
-                Access to Clark County's highest-performing schools with
-                excellent student-teacher ratios.
+                Served by Clark County School District, with elementary, middle,
+                and high schools located throughout Henderson.
               </p>
             </div>
             <div className="text-center">
@@ -193,8 +193,8 @@ export default function HomePage() {
                 Stephanie Ranch
               </h3>
               <p className="text-gray-600 mb-2">
-                Family-friendly with excellent schools and recreational
-                facilities
+                Community parks, walking trails, and youth sports fields within
+                the neighborhood
               </p>
               <p className="text-sm font-semibold text-purple-600">
                 $450K - $650K
@@ -205,7 +205,8 @@ export default function HomePage() {
                 Whitney Ranch
               </h3>
               <p className="text-gray-600 mb-2">
-                Established community with mature landscaping and affordability
+                Mature landscaping and tree-lined streets, with some of
+                Henderson's lowest price-per-square-foot values
               </p>
               <p className="text-sm font-semibold text-orange-600">
                 $400K - $600K
@@ -469,8 +470,8 @@ export default function HomePage() {
                   >
                     Green Valley
                   </a>{' '}
-                  provides luxury family living with top-rated schools and
-                  resort-style communities.{' '}
+                  provides resort-style amenities and is served by Clark County
+                  School District.{' '}
                   <a
                     href="/neighborhoods"
                     className="text-blue-600 hover:underline font-medium"

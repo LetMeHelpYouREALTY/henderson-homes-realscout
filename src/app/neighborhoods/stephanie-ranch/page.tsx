@@ -49,9 +49,8 @@ export default function StephanieRanchPage() {
                 Stephanie Ranch Henderson Homes for Sale
               </h1>
               <p className="text-xl mb-8">
-                Live MLS listings • Family-friendly community • Excellent
-                schools • Parks and recreation • Stephanie Elementary (9/10
-                rating)
+                Live MLS listings • Parks and recreation • Stephanie Elementary
+                • Clark County School District
               </p>
 
               <div className="grid md:grid-cols-4 gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg">
@@ -269,7 +268,7 @@ export default function StephanieRanchPage() {
                       <p className="font-semibold">Stephanie Elementary</p>
                       <p>Rating: 9/10 • Enrollment: 680</p>
                       <p className="text-xs text-gray-600">
-                        Excellent school with strong community support
+                        Strong community support
                       </p>
                     </div>
                     <div>
@@ -283,15 +282,15 @@ export default function StephanieRanchPage() {
                       <p className="font-semibold">Bob Miller Middle School</p>
                       <p>Rating: 8/10 • Enrollment: 1,100</p>
                       <p className="text-xs text-gray-600">
-                        Excellent special education support
+                        Special education support available
                       </p>
                     </div>
                   </div>
                   <div className="mt-4 p-3 bg-orange-50 rounded">
                     <p className="text-xs text-orange-800">
-                      <strong>Pro tip:</strong> Stephanie Elementary is highly
-                      rated and often has waiting lists. Contact the school
-                      directly about enrollment.
+                      <strong>Pro tip:</strong> Stephanie Elementary often has
+                      waiting lists. Contact the school directly about
+                      enrollment.
                     </p>
                   </div>
                 </div>
@@ -478,9 +477,9 @@ export default function StephanieRanchPage() {
           neighborhoodName="Stephanie Ranch"
           faq={[
             {
-              question: 'Is Stephanie Ranch considered a family-friendly area?',
+              question: 'What amenities does Stephanie Ranch offer?',
               answer:
-                'Yes. Buyers often choose Stephanie Ranch for neighborhood parks, established residential streets, and convenient access to schools and daily services.',
+                'Stephanie Ranch offers neighborhood parks, residential streets, and convenient access to Clark County schools and daily services.',
             },
             {
               question: 'What budget is typical for homes in Stephanie Ranch?',

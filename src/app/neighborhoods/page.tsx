@@ -116,12 +116,14 @@ export default function NeighborhoodsPage() {
               {
                 '@type': 'Place',
                 name: 'Stephanie Ranch',
-                description: 'Family-friendly with excellent schools',
+                description:
+                  'Community parks and a recreation center, served by Clark County School District',
               },
               {
                 '@type': 'Place',
                 name: 'Whitney Ranch',
-                description: 'Established community with mature landscaping',
+                description:
+                  'Mature landscaping with convenient shopping access',
               },
             ],
           },
@@ -137,11 +139,12 @@ export default function NeighborhoodsPage() {
             <p className="text-xl text-purple-100 max-w-4xl mx-auto mb-8">
               Discover Henderson's premier residential communities and find the
               perfect neighborhood for your lifestyle. From luxury
-              master-planned communities to family-friendly areas with excellent
-              schools.
+              master-planned communities to walkable neighborhoods with parks,
+              trails, and Clark County schools.
             </p>
             <div className="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">
-              🏘️ 15+ Communities • Top Schools • Family-Friendly • Luxury Living
+              🏘️ 15+ Communities • Clark County Schools • Parks & Trails • Luxury
+              Living
             </div>
           </div>
         </section>
@@ -179,7 +182,7 @@ export default function NeighborhoodsPage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Schools:</span>
-                      <span className="font-semibold">A+ Rated</span>
+                      <span className="font-semibold">Clark County SD</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Amenities:</span>
@@ -214,8 +217,8 @@ export default function NeighborhoodsPage() {
                   </h3>
                   <p className="text-gray-600 mb-4">
                     Hillside community offering stunning mountain views,
-                    resort-style amenities, and a tight-knit neighborhood feel
-                    with excellent schools and recreational facilities.
+                    resort-style amenities, walking trails, and recreational
+                    facilities.
                   </p>
                   <div className="space-y-2 mb-4">
                     <div className="flex justify-between">
@@ -226,7 +229,7 @@ export default function NeighborhoodsPage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Schools:</span>
-                      <span className="font-semibold">A+ Rated</span>
+                      <span className="font-semibold">Clark County SD</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Amenities:</span>
@@ -252,9 +255,8 @@ export default function NeighborhoodsPage() {
                     Stephanie Ranch
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Family-friendly community known for excellent schools, safe
-                    neighborhoods, and recreational facilities. Perfect for
-                    growing families seeking quality education and community.
+                    Community parks, walking trails, and a recreation center,
+                    served by Clark County School District.
                   </p>
                   <div className="space-y-2 mb-4">
                     <div className="flex justify-between">
@@ -265,7 +267,7 @@ export default function NeighborhoodsPage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Schools:</span>
-                      <span className="font-semibold">A+ Rated</span>
+                      <span className="font-semibold">Clark County SD</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Amenities:</span>
@@ -291,9 +293,9 @@ export default function NeighborhoodsPage() {
                     Whitney Ranch
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Established community with mature landscaping,
-                    affordability, and convenient access to shopping and dining.
-                    Great value for first-time homebuyers and families.
+                    Mature landscaping, convenient access to shopping and
+                    dining, and some of Henderson's lowest price-per-square-foot
+                    values.
                   </p>
                   <div className="space-y-2 mb-4">
                     <div className="flex justify-between">
@@ -304,7 +306,7 @@ export default function NeighborhoodsPage() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Schools:</span>
-                      <span className="font-semibold">A Rated</span>
+                      <span className="font-semibold">Clark County SD</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Amenities:</span>
@@ -337,8 +339,6 @@ export default function NeighborhoodsPage() {
                   <tr className="bg-blue-600 text-white">
                     <th className="p-4 text-left">Neighborhood</th>
                     <th className="p-4 text-center">Price Range</th>
-                    <th className="p-4 text-center">School Rating</th>
-                    <th className="p-4 text-center">Family Score</th>
                     <th className="p-4 text-center">Luxury Level</th>
                   </tr>
                 </thead>
@@ -346,29 +346,21 @@ export default function NeighborhoodsPage() {
                   <tr className="border-b">
                     <td className="p-4 font-semibold">Green Valley</td>
                     <td className="p-4 text-center">$750K - $1.2M</td>
-                    <td className="p-4 text-center">A+</td>
-                    <td className="p-4 text-center">⭐⭐⭐⭐⭐</td>
                     <td className="p-4 text-center">⭐⭐⭐⭐⭐</td>
                   </tr>
                   <tr className="border-b bg-gray-50">
                     <td className="p-4 font-semibold">Anthem</td>
                     <td className="p-4 text-center">$650K - $950K</td>
-                    <td className="p-4 text-center">A+</td>
-                    <td className="p-4 text-center">⭐⭐⭐⭐⭐</td>
                     <td className="p-4 text-center">⭐⭐⭐⭐</td>
                   </tr>
                   <tr className="border-b">
                     <td className="p-4 font-semibold">Stephanie Ranch</td>
                     <td className="p-4 text-center">$450K - $650K</td>
-                    <td className="p-4 text-center">A+</td>
-                    <td className="p-4 text-center">⭐⭐⭐⭐⭐</td>
                     <td className="p-4 text-center">⭐⭐⭐</td>
                   </tr>
                   <tr className="border-b bg-gray-50">
                     <td className="p-4 font-semibold">Whitney Ranch</td>
                     <td className="p-4 text-center">$400K - $600K</td>
-                    <td className="p-4 text-center">A</td>
-                    <td className="p-4 text-center">⭐⭐⭐⭐</td>
                     <td className="p-4 text-center">⭐⭐</td>
                   </tr>
                 </tbody>
@@ -397,11 +389,11 @@ export default function NeighborhoodsPage() {
               <div className="text-center p-6">
                 <div className="text-4xl mb-4">🎓</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  Top-Rated Schools
+                  Clark County School District
                 </h3>
                 <p className="text-gray-600">
-                  Access to Clark County's highest-performing schools with
-                  excellent student-teacher ratios and academic programs.
+                  Served by Clark County School District, with elementary,
+                  middle, and high schools located throughout Henderson.
                 </p>
               </div>
               <div className="text-center p-6">
