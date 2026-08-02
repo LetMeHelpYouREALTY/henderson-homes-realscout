@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@cerebras/cerebras_cloud_sdk": "^1.91.0",
+    "@drjanduffy/cerebras-service": "github:DrJanDuffy/cerebras-service#main",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slider": "^1.1.2",
