@@ -1,13 +1,13 @@
 import type {
-  HendersonHyperlocalData,
   GeoScope,
-  StreetComps,
-  WalkabilityScore,
-  SchoolZone,
+  HendersonHyperlocalData,
   MicroMarketPricing,
   PredictiveMarketTrends,
+  SchoolZone,
+  StreetComps,
+  WalkabilityScore,
 } from '@/types/hyperlocal'
-import { fubApiService, type FUBProperty } from './fubApiService'
+import { type FUBProperty, fubApiService } from './fubApiService'
 
 // Property data interface
 export interface PropertyData {

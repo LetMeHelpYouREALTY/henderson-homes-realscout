@@ -1,10 +1,10 @@
-import Breadcrumbs from '@/components/ui/Breadcrumbs'
-import type { Metadata } from 'next'
-import Link from 'next/link'
 import HyperLocalSeoSection from '@/components/neighborhoods/HyperLocalSeoSection'
 import NearbyNeighborhoods from '@/components/neighborhoods/NearbyNeighborhoods'
 import NeighborhoodBreadcrumbSchema from '@/components/neighborhoods/NeighborhoodBreadcrumbSchema'
 import RealScoutListings from '@/components/neighborhoods/RealScoutListings'
+import Breadcrumbs from '@/components/ui/Breadcrumbs'
+import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Anthem Henderson Homes for Sale | Live MLS Listings & Buyer Guide',

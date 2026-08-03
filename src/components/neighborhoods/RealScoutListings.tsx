@@ -1,12 +1,12 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { PropertyImage } from '@/components/ui/OptimizedImage'
 import {
-  realScoutService,
   type NeighborhoodData,
   type RealScoutListing,
+  realScoutService,
 } from '@/services/realScoutService'
-import { PropertyImage } from '@/components/ui/OptimizedImage'
+import { useEffect, useState } from 'react'
 
 interface RealScoutListingsProps {
   neighborhood: string

@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import StructuredData, { webPageData } from '@/components/StructuredData'
+import { useEffect, useRef } from 'react'
 
 export default function HomeValuePage() {
   const widgetRef = useRef<HTMLDivElement>(null)

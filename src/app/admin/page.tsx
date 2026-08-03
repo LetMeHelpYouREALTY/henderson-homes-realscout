@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
 import ClientIntelligenceDashboard from '@/components/ai/ClientIntelligenceDashboard'
 import FUBIntegrationDemo from '@/components/hyperlocal/FUBIntegrationDemo'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Admin Dashboard | Henderson Homes',

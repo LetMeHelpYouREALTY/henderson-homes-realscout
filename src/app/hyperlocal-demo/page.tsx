@@ -1,8 +1,8 @@
 'use client'
 
-import type { Metadata } from 'next'
 import StreetCompsWidget from '@/components/hyperlocal/StreetCompsWidget'
 import MarketInsightsWidget from '@/components/market-insights/MarketInsightsWidget'
+import type { Metadata } from 'next'
 import Script from 'next/script'
 
 export default function HyperlocalDemoPage() {

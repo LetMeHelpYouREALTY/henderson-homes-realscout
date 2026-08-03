@@ -1,6 +1,6 @@
 import { RealScoutWidget } from '@/components/RealScoutWidget'
-import type { Metadata } from 'next'
 import StructuredData, { webPageData } from '@/components/StructuredData'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title:

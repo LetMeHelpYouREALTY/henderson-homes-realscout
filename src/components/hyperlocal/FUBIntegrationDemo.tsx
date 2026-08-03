@@ -1,11 +1,11 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react'
 import {
-  fubApiService,
-  type FUBProperty,
   type FUBMarketData,
+  type FUBProperty,
+  fubApiService,
 } from '@/services/fubApiService'
+import { useCallback, useEffect, useState } from 'react'
 
 interface FUBIntegrationDemoProps {
   className?: string

@@ -7,7 +7,7 @@
 //
 // Requires Node 18+ (global fetch). No npm dependencies.
 
-import { isValidPair, type ModelId } from './advisorPairs'
+import { type ModelId, isValidPair } from './advisorPairs'
 
 const API_URL = 'https://api.anthropic.com/v1/messages'
 const BETA_HEADER = 'advisor-tool-2026-03-01'

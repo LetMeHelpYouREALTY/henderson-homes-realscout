@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import type {
   MarketData,
   MarketInsight,
 } from '@/services/marketInsightsService'
+import { useEffect, useState } from 'react'
 
 interface MarketInsightsWidgetProps {
   className?: string

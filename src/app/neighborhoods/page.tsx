@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
 import StructuredData, { webPageData } from '@/components/StructuredData'
 import HyperLocalSeoSection from '@/components/neighborhoods/HyperLocalSeoSection'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title:

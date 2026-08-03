@@ -1,12 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import {
-  aiClientIntelligenceService,
   type ClientProfile,
   type LeadScore,
   type PredictiveInsights,
+  aiClientIntelligenceService,
 } from '@/services/aiClientIntelligence'
+import { useEffect, useState } from 'react'
 
 interface ClientIntelligenceDashboardProps {
   className?: string
