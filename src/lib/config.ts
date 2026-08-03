@@ -40,6 +40,11 @@ export const config = {
     agentId: getEnvVar('REALSCOUT_AGENT_ID'),
   },
 
+  // Calendly webhook signature verification (org-scoped webhook subscription)
+  calendly: {
+    webhookSigningKey: getEnvVar('CALENDLY_WEBHOOK_SIGNING_KEY'),
+  },
+
   // Security
   security: {
     jwtSecret: getEnvVar('JWT_SECRET', 'fallback-secret-change-in-production'),

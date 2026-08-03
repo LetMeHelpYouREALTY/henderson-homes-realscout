@@ -1,3 +1,4 @@
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton'
 import { RealScoutWidget } from '@/components/RealScoutWidget'
 import { Button } from '@/components/ui/button'
 
@@ -12,10 +13,17 @@ export default function ListingsPage() {
           Browse all available properties in Henderson, Nevada. Use our advanced
           search to find your perfect home.
         </p>
-        <div className="mt-6">
+        <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
           <Button variant="outline" size="lg">
             Advanced Search
           </Button>
+          <CalendlyPopupButton
+            eventSlug="showing"
+            utm={{ utm_source: 'henderson-site', utm_medium: 'listings-page' }}
+            size="lg"
+          >
+            Schedule a Showing
+          </CalendlyPopupButton>
         </div>
       </div>
 

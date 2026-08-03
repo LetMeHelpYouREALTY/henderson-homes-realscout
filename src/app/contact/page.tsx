@@ -1,10 +1,11 @@
 'use client'
 
-import { useId } from 'react'
+import { CalendlyPopupButton } from '@/components/CalendlyPopupButton'
 import StructuredData, {
   webPageData,
   localBusinessData,
 } from '@/components/StructuredData'
+import { useId } from 'react'
 
 export default function ContactPage() {
   const firstNameId = useId()
@@ -195,6 +196,24 @@ export default function ContactPage() {
                     consent to being contacted about your inquiry.
                   </p>
                 </form>
+
+                <div className="mt-6 pt-6 border-t border-gray-200 text-center">
+                  <p className="text-gray-600 text-sm mb-3">
+                    Prefer to just pick a time?
+                  </p>
+                  <CalendlyPopupButton
+                    eventSlug="buyer-consultation-30-min"
+                    utm={{
+                      utm_source: 'henderson-site',
+                      utm_medium: 'contact-page',
+                    }}
+                    variant="outline"
+                    size="lg"
+                    className="w-full"
+                  >
+                    Book a Free Consultation
+                  </CalendlyPopupButton>
+                </div>
               </div>
 
               {/* Contact Information */}

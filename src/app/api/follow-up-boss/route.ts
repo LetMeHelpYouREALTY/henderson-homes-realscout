@@ -1,6 +1,6 @@
-import { type NextRequest, NextResponse } from 'next/server'
 import { config } from '@/lib/config'
 import { APIError, logError } from '@/lib/errors'
+import { type NextRequest, NextResponse } from 'next/server'
 
 interface ContactData {
   firstName: string
