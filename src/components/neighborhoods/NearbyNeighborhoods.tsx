@@ -26,14 +26,14 @@ const NEIGHBORHOOD_LINKS: NeighborhoodLink[] = [
     slug: 'stephanie-ranch',
     name: 'Stephanie Ranch',
     summary:
-      'Family-oriented area with practical floor plans and strong day-to-day convenience.',
+      'Area with practical floor plans and strong day-to-day convenience.',
     priceRange: '$450K - $650K',
   },
   {
     slug: 'whitney-ranch',
     name: 'Whitney Ranch',
     summary:
-      'Established neighborhood with value-driven pricing and mature landscaping.',
+      'Older neighborhood with value-driven pricing and mature landscaping.',
     priceRange: '$400K - $600K',
   },
 ]

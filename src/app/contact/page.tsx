@@ -373,7 +373,7 @@ export default function ContactPage() {
                   Stephanie Ranch
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Family-friendly with excellent schools
+                  Parks and nearby schools
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -381,7 +381,7 @@ export default function ContactPage() {
                   Whitney Ranch
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Established community with mature landscaping
+                  Mature landscaping and well-kept common areas
                 </p>
               </div>
             </div>

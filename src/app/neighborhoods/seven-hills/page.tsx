@@ -268,7 +268,7 @@ export default function SevenHillsPage() {
                       <p className="font-semibold">Seven Hills Elementary</p>
                       <p>Rating: 9/10 • Enrollment: 580</p>
                       <p className="text-xs text-gray-600">
-                        Excellent school with strong academic focus
+                        Public school campus. Check current CCSD and Nevada state data for school ratings.
                       </p>
                     </div>
                     <div>
@@ -289,7 +289,7 @@ export default function SevenHillsPage() {
                   <div className="mt-4 p-3 bg-purple-50 rounded">
                     <p className="text-xs text-purple-800">
                       <strong>Pro tip:</strong> Seven Hills Elementary is a
-                      highly-rated school with limited enrollment. Contact the
+                      school with limited enrollment. Contact the
                       school directly about enrollment if buying mid-school
                       year.
                     </p>

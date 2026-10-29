@@ -219,12 +219,12 @@ export default function HomeValuePage() {
                   Why Choose Henderson?
                 </h3>
                 <ul className="space-y-2 text-gray-600 text-sm">
-                  <li>• Top-rated school districts</li>
-                  <li>• Family-friendly communities</li>
+                  <li>• Clark County School District campuses</li>
+                  <li>• Communities</li>
                   <li>• Close to Las Vegas amenities</li>
                   <li>• Year-round outdoor activities</li>
                   <li>• Growing job market</li>
-                  <li>• Safe neighborhoods</li>
+                  <li>• Neighborhoods</li>
                   <li>• Master-planned communities</li>
                   <li>• Excellent healthcare facilities</li>
                 </ul>

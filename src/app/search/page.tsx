@@ -254,7 +254,7 @@ export default function AdvancedSearchPage() {
                   Stephanie Ranch
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Family-friendly with excellent schools and recreational
+                  Parks, nearby schools, and recreational
                   facilities
                 </p>
                 <p className="text-sm font-semibold text-purple-600">
@@ -266,7 +266,7 @@ export default function AdvancedSearchPage() {
                   Whitney Ranch
                 </h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  Established community with mature landscaping and
+                  Mature landscaping and
                   affordability
                 </p>
                 <p className="text-sm font-semibold text-orange-600">

@@ -434,8 +434,8 @@ export default function HyperlocalDemoPage() {
                         Neighborhood Highlights
                       </h4>
                       <ul className="space-y-2 text-blue-100">
-                        <li>• Green Valley: Premium location, top schools</li>
-                        <li>• Anthem: Family-friendly, great amenities</li>
+                        <li>• Green Valley: Premium location, nearby public schools</li>
+                        <li>• Anthem: Great amenities</li>
                         <li>• Seven Hills: Luxury homes, golf course access</li>
                         <li>• Whitney Ranch: Value, growing community</li>
                       </ul>

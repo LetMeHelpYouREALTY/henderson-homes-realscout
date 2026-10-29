@@ -105,7 +105,7 @@ export default function HomePage() {
                 Award-Winning City
               </h3>
               <p className="text-gray-600">
-                Consistently ranked among America's safest and most livable
+                Regularly listed among America's most livable
                 cities with excellent municipal services.
               </p>
             </div>
@@ -305,7 +305,7 @@ export default function HomePage() {
                 Which Henderson neighborhood is best for families?
               </h3>
               <p className="text-gray-600">
-                Stephanie Ranch and Whitney Ranch offer excellent schools,
+                Stephanie Ranch and Whitney Ranch offer nearby public schools,
                 family amenities, and more affordable pricing for growing
                 families.
               </p>
@@ -462,7 +462,7 @@ export default function HomePage() {
                   >
                     Whitney Ranch
                   </a>{' '}
-                  offer excellent schools, family amenities, and more affordable
+                  offer nearby public schools, family amenities, and more affordable
                   pricing.{' '}
                   <a
                     href="/neighborhoods/green-valley"
