@@ -48,7 +48,7 @@ export default function AnthemPage() {
               </h1>
               <p className="text-xl mb-8">
                 Live MLS listings • Elevated hillside community • Golf and
-                country club access • Parks and trails • Strong school options
+                country club access • Parks and trails • Nearby public schools
               </p>
 
               <div className="grid md:grid-cols-4 gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-lg">

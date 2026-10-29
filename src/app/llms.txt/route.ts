@@ -16,7 +16,7 @@ export async function GET() {
 
 ## About
 
-Dr. Jan Duffy is a licensed Nevada real estate agent (S.0197614) and Henderson's leading neighborhood specialist. With 30+ years of Las Vegas Valley experience, $127M+ in career sales, and 500+ families served, she provides unmatched expertise in Henderson's diverse communities — from luxury golf course estates to family-friendly master-planned neighborhoods.
+Dr. Jan Duffy is a licensed Nevada real estate agent (S.0197614) and Henderson's leading neighborhood specialist. With 30+ years of Las Vegas Valley experience, $127M+ in career sales, and 500+ families served, she provides unmatched expertise in Henderson's diverse communities — from luxury golf course estates to master-planned neighborhoods with parks and trails.
 
 - **Brokerage:** Berkshire Hathaway HomeServices Nevada Properties
 - **License:** Nevada S.0197614.LLC
@@ -30,7 +30,7 @@ Dr. Jan Duffy is a licensed Nevada real estate agent (S.0197614) and Henderson's
 - **Home Valuation** — Free market analysis for Henderson homeowners
 - **Buyer Representation** — Full-service buyer agent with negotiation expertise
 - **Seller Representation** — Strategic pricing, staging, and marketing
-- **School District Strategy** — Guidance on Henderson's top-rated school zones
+- **School District Strategy** — Guidance on Henderson's school zones
 - **Golf Community Specialist** — Anthem Country Club, Rio Secco, DragonRidge expertise
 - **Corporate Relocation** — Henderson relocation packages for transferees
 - **55+ Community Guide** — Sun City Anthem, Solera, Heritage at Cadence
@@ -55,9 +55,9 @@ Green Valley, Green Valley Ranch, Anthem, MacDonald Ranch, MacDonald Highlands, 
 
 ## Henderson Market Highlights
 
-- Henderson: Safest large city in Nevada, consistently ranked nationally
+- Henderson: Nevada's second-largest city; crime data published online by Henderson Police
 - Population: 330,000+ and growing
-- Top school district: Clark County School District Henderson zone
+- School district: Clark County School District Henderson zone
 - Major employers: multiple Fortune 500 companies
 - 300+ days of sunshine per year
 - No state income tax in Nevada

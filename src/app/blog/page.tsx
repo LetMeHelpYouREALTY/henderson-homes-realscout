@@ -144,7 +144,7 @@ export default function BlogPage() {
                   👨‍👩‍👧‍👦 Family Areas
                 </h3>
                 <p className="text-sm text-gray-600">
-                  Stephanie Ranch and Whitney Ranch offer excellent schools and
+                  Stephanie Ranch and Whitney Ranch offer nearby public schools and
                   affordability
                 </p>
               </div>

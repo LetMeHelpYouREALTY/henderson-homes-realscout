@@ -354,7 +354,7 @@ const neighborhoodSchema = {
       '@type': 'Neighborhood',
       name: 'Stephanie Ranch',
       description:
-        'Family-friendly with excellent schools and recreational facilities',
+        'Parks, nearby schools, and recreational facilities',
       priceRange: '$450,000 - $650,000',
       amenityFeature: [
         {
@@ -373,7 +373,7 @@ const neighborhoodSchema = {
       '@type': 'Neighborhood',
       name: 'Whitney Ranch',
       description:
-        'Established community with mature landscaping and affordability',
+        'Mature landscaping and affordability',
       priceRange: '$400,000 - $600,000',
       amenityFeature: [
         {

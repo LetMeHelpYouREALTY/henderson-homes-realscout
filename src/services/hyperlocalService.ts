@@ -314,7 +314,7 @@ export class WalkabilityService {
       insights: [
         'Excellent shopping access within 0.5 miles',
         'Multiple dining options within walking distance',
-        'Good school access with high ratings',
+        'Nearby public schools with high ratings',
         'Healthcare facilities within 2 miles',
       ],
       recommendations: [

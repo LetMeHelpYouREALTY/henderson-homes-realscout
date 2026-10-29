@@ -382,7 +382,7 @@ export default function NeighborhoodsPage() {
                   Award-Winning City
                 </h3>
                 <p className="text-gray-600">
-                  Consistently ranked among America's safest and most livable
+                  Regularly listed among America's most livable
                   cities with excellent municipal services and infrastructure.
                 </p>
               </div>

@@ -55,7 +55,7 @@ export default function FAQPage() {
                       Which Henderson neighborhood is best for families?
                     </h3>
                     <p className="text-gray-600">
-                      Stephanie Ranch and Whitney Ranch offer excellent schools,
+                      Stephanie Ranch and Whitney Ranch offer nearby public schools,
                       family amenities, and more affordable pricing. Green
                       Valley provides luxury family living with top-rated
                       schools and resort-style communities.
@@ -93,10 +93,10 @@ export default function FAQPage() {
                 <div itemProp="text" className="space-y-6">
                   <div>
                     <h3 className="text-xl font-semibold mb-3 text-gray-700">
-                      What are the best schools in Henderson?
+                      What are the public schools in Henderson?
                     </h3>
                     <p className="text-gray-600">
-                      Henderson has excellent schools including Green Valley
+                      Henderson has nearby public schools including Green Valley
                       High School, Coronado High School, and various elementary
                       schools in the Clark County School District. Many families
                       choose specific neighborhoods based on school ratings and
@@ -124,7 +124,7 @@ export default function FAQPage() {
                       Green Valley is more established with mature landscaping
                       and closer to shopping/dining. Anthem is newer with modern
                       homes, larger lots, and a more suburban feel. Both offer
-                      excellent amenities and family-friendly environments.
+                      excellent amenities and parks.
                     </p>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export default function FAQPage() {
                     <p className="text-gray-600">
                       Absolutely! Henderson has strong appreciation rates,
                       growing population, and diverse property types. The city's
-                      proximity to Las Vegas, excellent schools, and quality of
+                      proximity to Las Vegas, nearby public schools, and quality of
                       life make it attractive to both residents and investors.
                     </p>
                   </div>
